@@ -1,0 +1,22 @@
+.formio-component.form-group {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.formio-component.form-group label.col-form-label {
+  color: #000;
+  letter-spacing: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  margin-bottom: 4px;
+  display: block;
+}
+.formio-component.form-group .form-text {
+  font-size: 12px;
+}
+.formio-component.form-group > .formio-errors {
+  margin-top: 0.5rem;
+}
+.formio-component.form-group .form-group {
+  margin-bottom: 0px !important;
+}

@@ -1,0 +1,84 @@
+.formio-component.formio-component-editgrid .editgrid-table-container {
+  margin: 10px 20px;
+}
+.formio-component.formio-component-editgrid .editgrid-table-container table.table {
+  table-layout: fixed;
+}
+.formio-component.formio-component-editgrid .editgrid-table-container table.table .editgrid-table-head, .formio-component.formio-component-editgrid .editgrid-table-container table.table .editgrid-table-body {
+  border: none;
+}
+.formio-component.formio-component-editgrid .editgrid-table-container table.table .editgrid-table-head tr, .formio-component.formio-component-editgrid .editgrid-table-container table.table .editgrid-table-body tr {
+  border: none;
+}
+.formio-component.formio-component-editgrid .editgrid-table-container table.table .editgrid-table-head tr td, .formio-component.formio-component-editgrid .editgrid-table-container table.table .editgrid-table-body tr td {
+  color: #111;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 12px 8px;
+  border: none;
+}
+.formio-component.formio-component-editgrid .editgrid-table-container table.table .editgrid-table-head tr td.editgrid-table-action, .formio-component.formio-component-editgrid .editgrid-table-container table.table .editgrid-table-body tr td.editgrid-table-action {
+  width: 120px;
+  text-align: right;
+}
+.formio-component.formio-component-editgrid .editgrid-table-container table.table .editgrid-table-head tr td p, .formio-component.formio-component-editgrid .editgrid-table-container table.table .editgrid-table-body tr td p {
+  margin: 0;
+}
+.formio-component.formio-component-editgrid .editgrid-table-container table.table .editgrid-table-body tr {
+  transition: 0.3s all ease;
+  border-top: 1px solid #ccc;
+}
+.formio-component.formio-component-editgrid .editgrid-table-container table.table .editgrid-table-body tr:hover {
+  background-color: #000;
+}
+.formio-component.formio-component-editgrid .editgrid-table-container table.table .editgrid-table-body tr td {
+  color: #555;
+  font-size: 13px;
+  font-weight: normal;
+  max-width: 200px;
+}
+.formio-component.formio-component-editgrid .editgrid-table-container table.table .editgrid-table-body tr td h1, .formio-component.formio-component-editgrid .editgrid-table-container table.table .editgrid-table-body tr td h2, .formio-component.formio-component-editgrid .editgrid-table-container table.table .editgrid-table-body tr td h3, .formio-component.formio-component-editgrid .editgrid-table-container table.table .editgrid-table-body tr td h4, .formio-component.formio-component-editgrid .editgrid-table-container table.table .editgrid-table-body tr td h5, .formio-component.formio-component-editgrid .editgrid-table-container table.table .editgrid-table-body tr td h6 {
+  font-size: revert;
+  font-weight: revert;
+}
+.formio-component.formio-component-editgrid .editgrid-table-container table.table .editgrid-table-body tr td menu, .formio-component.formio-component-editgrid .editgrid-table-container table.table .editgrid-table-body tr td ol, .formio-component.formio-component-editgrid .editgrid-table-container table.table .editgrid-table-body tr td ul {
+  list-style: revert;
+}
+.formio-component.formio-component-editgrid .editgrid-table-container table.table .editgrid-table-body tr td .grid-item {
+  overflow-y: scroll;
+  max-height: 200px;
+}
+.formio-component.formio-component-editgrid .editgrid-table-container table.table .editgrid-table-body tr td .grid-item::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+.formio-component.formio-component-editgrid .editgrid-table-container table.table .editgrid-table-body tr td .grid-item::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+.formio-component.formio-component-editgrid > button.btn {
+  display: block;
+  background-color: var(--formio-color);
+  font-size: 12px;
+  color: #fff;
+  height: 30px;
+  font-weight: bold;
+  text-transform: none;
+  box-shadow: none;
+  border-radius: 4px;
+  letter-spacing: 0;
+  min-width: 64px;
+  padding: 0 16px;
+  user-select: none;
+  white-space: nowrap;
+  outline: 0;
+  position: relative;
+  text-decoration: none;
+}
+.formio-component.formio-component-editgrid > button.btn.btn-primary {
+  border-color: unset !important;
+}
+.formio-component.formio-component-editgrid.button-center > button.btn {
+  margin: 0 auto;
+}

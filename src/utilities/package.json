@@ -1,0 +1,17 @@
+{
+  "name": "@packages/utilities",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    "./hooks/*": "./src/hooks/*.ts",
+    "./hooks": "./src/hooks/index.ts",
+    "./utils/*": "./src/utils/*.ts",
+    "./utils": "./src/utils/index.ts"
+  },
+  "scripts": {
+    "lint": "eslint . --max-warnings 0"
+  },
+  "dependencies": {
+    "@packages/ui": "*"
+  }
+}

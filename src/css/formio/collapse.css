@@ -1,0 +1,14 @@
+.formio-component.formio-component-panel .card {
+  padding: 0;
+  box-shadow: none;
+}
+.formio-component.formio-component-panel .card .card-header {
+  padding: 16px 12px;
+  background: #fafafa !important;
+  background-position: right center !important;
+  background-size: 36px !important;
+  border-radius: 4px;
+}
+.formio-component.formio-component-panel .card .card-body {
+  padding: 12px;
+}

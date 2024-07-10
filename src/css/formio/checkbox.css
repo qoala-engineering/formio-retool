@@ -1,0 +1,13 @@
+.formio-component.formio-component-checkbox {
+  color: #000;
+  font-weight: normal;
+  font-size: 16px;
+  padding-top: 10px;
+  align-items: center;
+}
+.formio-component.formio-component-checkbox .form-check-label {
+  color: #fff;
+}
+.formio-component.formio-component-checkbox .form-check-label input[type='checkbox']:checked {
+  color: #dc3545;
+}

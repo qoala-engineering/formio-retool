@@ -1,0 +1,69 @@
+.formio-component input:focus-visible {
+  outline: none;
+}
+.formio-component label:focus-visible {
+  outline: none;
+}
+.formio-component.formio-component-textfield .input-group, .formio-component.formio-component-number .input-group, .formio-component.formio-component-currency .input-group, .formio-component.formio-component-password .input-group, .formio-component.formio-component-email .input-group, .formio-component.formio-component-phoneNumber .input-group {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.formio-component.formio-component-textfield .input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating), .formio-component.formio-component-number .input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating), .formio-component.formio-component-currency .input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating), .formio-component.formio-component-password .input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating), .formio-component.formio-component-email .input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating), .formio-component.formio-component-phoneNumber .input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.formio-component.formio-component-textfield .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not( .invalid-feedback), .formio-component.formio-component-number .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not( .invalid-feedback), .formio-component.formio-component-currency .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not( .invalid-feedback), .formio-component.formio-component-password .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not( .invalid-feedback), .formio-component.formio-component-email .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not( .invalid-feedback), .formio-component.formio-component-phoneNumber .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not( .invalid-feedback) {
+  margin-left: -1px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.formio-component.formio-component-textfield .form-control, .formio-component.formio-component-number .form-control, .formio-component.formio-component-currency .form-control, .formio-component.formio-component-password .form-control, .formio-component.formio-component-email .form-control, .formio-component.formio-component-phoneNumber .form-control {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px 12px;
+  display: block;
+  width: 100%;
+  height: auto;
+  font-weight: normal;
+  line-height: 18px;
+  font-size: 14px;
+}
+.formio-component.formio-component-textfield .input-group-append, .formio-component.formio-component-number .input-group-append, .formio-component.formio-component-currency .input-group-append, .formio-component.formio-component-password .input-group-append, .formio-component.formio-component-email .input-group-append, .formio-component.formio-component-phoneNumber .input-group-append, .formio-component.formio-component-textfield .input-group-prepend, .formio-component.formio-component-number .input-group-prepend, .formio-component.formio-component-currency .input-group-prepend, .formio-component.formio-component-password .input-group-prepend, .formio-component.formio-component-email .input-group-prepend, .formio-component.formio-component-phoneNumber .input-group-prepend {
+  border: 1px solid #f0f1f2;
+  border-radius: 8px;
+  background-color: #dedede;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.formio-component.formio-component-textfield .input-group-append .input-group-text, .formio-component.formio-component-number .input-group-append .input-group-text, .formio-component.formio-component-currency .input-group-append .input-group-text, .formio-component.formio-component-password .input-group-append .input-group-text, .formio-component.formio-component-email .input-group-append .input-group-text, .formio-component.formio-component-phoneNumber .input-group-append .input-group-text, .formio-component.formio-component-textfield .input-group-prepend .input-group-text, .formio-component.formio-component-number .input-group-prepend .input-group-text, .formio-component.formio-component-currency .input-group-prepend .input-group-text, .formio-component.formio-component-password .input-group-prepend .input-group-text, .formio-component.formio-component-email .input-group-prepend .input-group-text, .formio-component.formio-component-phoneNumber .input-group-prepend .input-group-text {
+  display: flex;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 12px;
+  padding: 5px 15px;
+}
+.formio-component.formio-component-textfield input.form-control:focus, .formio-component.formio-component-number input.form-control:focus, .formio-component.formio-component-currency input.form-control:focus, .formio-component.formio-component-password input.form-control:focus, .formio-component.formio-component-email input.form-control:focus, .formio-component.formio-component-phoneNumber input.form-control:focus {
+  border-color: blue;
+}
+.formio-component.formio-component-textfield input.form-control:focus + .input-group-append, .formio-component.formio-component-number input.form-control:focus + .input-group-append, .formio-component.formio-component-currency input.form-control:focus + .input-group-append, .formio-component.formio-component-password input.form-control:focus + .input-group-append, .formio-component.formio-component-email input.form-control:focus + .input-group-append, .formio-component.formio-component-phoneNumber input.form-control:focus + .input-group-append {
+  border-color: var(--formio-color) !important;
+}
+.formio-component.formio-component-textfield input.form-control:disabled, .formio-component.formio-component-number input.form-control:disabled, .formio-component.formio-component-currency input.form-control:disabled, .formio-component.formio-component-password input.form-control:disabled, .formio-component.formio-component-email input.form-control:disabled, .formio-component.formio-component-phoneNumber input.form-control:disabled {
+  background-color: #ccc;
+}
+.formio-component.formio-component-phone .input-group .input-group-prepend + .form-control {
+  border-radius: 0px 8px 8px 0 !important;
+}
+.formio-component.formio-component-radio .form-check-inline {
+  display: inline-flex;
+  align-items: center;
+  padding-left: 0;
+  margin-right: 8px;
+}
+.formio-component.formio-component-radio .form-check-inline .form-check-input {
+  position: static;
+  margin-top: 0;
+  margin-right: 4px;
+  margin-left: 0;
+}

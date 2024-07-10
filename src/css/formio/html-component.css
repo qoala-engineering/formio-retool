@@ -1,0 +1,11 @@
+.formio-component-htmlelement li {
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.4;
+}
+.formio-component-htmlelement h4 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+}

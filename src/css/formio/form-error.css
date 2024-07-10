@@ -1,0 +1,18 @@
+.formio-component.formio-error-wrapper, .formio-component .formio-warning-wrapper {
+  padding: 0;
+  border-radius: 5px;
+}
+.formio-component .formio-errors .error {
+  background-color: transparent !important;
+  color: #dc3545;
+  font-size: 12px;
+}
+.formio-component .field-required:after {
+  position: relative;
+  z-index: 1;
+}
+/* .formio-component .field-required:after, .formio-component .tab-error::after {
+  content: " *";
+  color: #eb0000;
+} */
+

@@ -1,0 +1,57 @@
+.formio-component.formio-component-datetime .input-group {
+  display: flex;
+}
+.formio-component.formio-component-datetime .input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.formio-component.formio-component-datetime .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  margin-left: -1px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.formio-component.formio-component-datetime .form-control {
+  border: 1px solid #f0f1f2;
+  background-color: #f0f1f2;
+  border-radius: 8px !important;
+  padding: 6px 8px 6px 8px;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.formio-component.formio-component-datetime .form-control.input {
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+.formio-component.formio-component-datetime .input-group-prepend {
+  border: 1px solid #f0f1f2;
+  border-radius: 8px;
+  background-color: #fff;
+}
+.formio-component.formio-component-datetime .input-group-prepend .input-group-text {
+  display: flex;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 12px;
+  padding: 5px 15px;
+}
+.formio-component.formio-component-datetime input.form-control:focus {
+  border-color: var(--formio-color) !important;
+}
+.formio-component.formio-component-datetime input.form-control:focus + .input-group-append {
+  border-color: var(--formio-color) !important;
+}
+.formio-component.formio-component-datetime .input-group-text {
+  display: flex;
+  align-items: center;
+  padding: 0.64rem 0.75rem;
+  margin-bottom: 0px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}

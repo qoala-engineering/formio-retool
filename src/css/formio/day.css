@@ -1,0 +1,25 @@
+.formio-component.formio-component-day select {
+  width: 100% !important;
+}
+.formio-component.formio-component-day .formio-select-autocomplete-input {
+  visibility: hidden;
+}
+.formio-component.formio-component-day .row {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.formio-component.formio-component-day .row .col {
+  flex-grow: 1;
+  flex-basis: 100%;
+  align-items: flex-start;
+}
+.formio-component.formio-component-day .row .col .field-required {
+  margin-bottom: 8px;
+  display: block;
+}
+.formio-component.formio-component-day .row .col .formio-select-autocomplete-input {
+  display: none;
+}
+.formio-component.formio-component-day .row .col:not(:last-child) {
+  margin-right: 8px;
+}

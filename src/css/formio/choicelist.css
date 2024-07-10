@@ -1,0 +1,7 @@
+
+.choices__list {
+  width: 100%;
+  background-color: #fff;
+  z-index: 11;
+  max-height: 260px;
+}

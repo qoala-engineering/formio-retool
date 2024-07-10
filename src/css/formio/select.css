@@ -1,0 +1,76 @@
+.formio-component.formio-component-maxAge {
+  padding-bottom: 24px;
+}
+.formio-component.formio-component-select .input-group {
+  display: flex;
+}
+.formio-component.formio-component-select .input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.formio-component.formio-component-select .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not( .invalid-feedback) {
+  margin-left: -1px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.formio-component.formio-component-select .form-control {
+  border: 1px solid #f0f1f2;
+  background-color: #f0f1f2;
+  border-radius: 8px !important;
+  padding: 6px 8px 6px 8px;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.formio-component.formio-component-select .form-control .choices__list--single {
+  padding: 0;
+}
+.formio-component.formio-component-select .input-group-append, .formio-component.formio-component-select .input-group-prepend {
+  border: 1px solid #f0f1f2;
+  border-radius: 8px;
+  background-color: #fff;
+}
+.formio-component.formio-component-select .input-group-append .input-group-text, .formio-component.formio-component-select .input-group-prepend .input-group-text {
+  display: flex;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 12px;
+  padding: 5px 15px;
+}
+.formio-component.formio-component-select input.form-control:focus {
+  border-color: var(--formio-color) !important;
+}
+.formio-component.formio-component-select input.form-control:focus + .input-group-append {
+  border-color: var(--formio-color) !important;
+}
+.formio-component.formio-component-select .formio-select-autocomplete-input {
+  display: none;
+}
+.formio-component.formio-component-select .choices__list {
+  width: 100%;
+}
+.formio-component.formio-component-select .choices__list .choices__input {
+  width: 100%;
+  background-color: white;
+  box-shadow: none;
+  border: none;
+}
+.formio-component.formio-component-multiple input[type=text] {
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+.formio-component.formio-component-multiple .form-control {
+  height: auto !important;
+}
+.formio-component.formio-component-multiple .choices__list--multiple .choices__item {
+  padding: 4px 10px;
+  font-size: 10px;
+  font-weight: 500;
+  margin-right: 3.75px;
+  margin-bottom: 3.75px;
+  background-color: #ff9738;
+  border: 1px solid #ff9738;
+}
+.formio-component.formio-component-multiple .choices[data-type*=select-multiple] .choices__button {
+  border-left: 1px solid #ff9738;
+}

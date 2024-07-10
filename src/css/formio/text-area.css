@@ -1,0 +1,54 @@
+.formio-component textarea:focus-visible {
+  outline: none;
+}
+.formio-component.formio-component-textarea h1, .formio-component.formio-component-textarea h2, .formio-component.formio-component-textarea h3, .formio-component.formio-component-textarea h4, .formio-component.formio-component-textarea h5, .formio-component.formio-component-textarea h6 {
+  font-size: revert;
+  font-weight: revert;
+}
+.formio-component.formio-component-textarea menu, .formio-component.formio-component-textarea ol, .formio-component.formio-component-textarea ul {
+  list-style: revert;
+}
+.formio-component.formio-component-textarea .input-group {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.formio-component.formio-component-textarea .input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.formio-component.formio-component-textarea .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not( .invalid-feedback) {
+  margin-left: -1px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.formio-component.formio-component-textarea .form-control {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px 12px;
+  display: block;
+  width: 100%;
+  height: auto;
+  font-size: 14px;
+  line-height: 18px;
+}
+.formio-component.formio-component-textarea .input-group-append, .formio-component.formio-component-textarea .input-group-prepend {
+  border: 1px solid #f0f1f2;
+  border-radius: 8px;
+  background-color: #fff;
+}
+.formio-component.formio-component-textarea .input-group-append .input-group-text, .formio-component.formio-component-textarea .input-group-prepend .input-group-text {
+  display: flex;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 12px;
+  padding: 5px 15px;
+}
+.formio-component.formio-component-textarea textarea:focus-visible {
+  border-color: blue;
+}
+.formio-component.formio-component-textarea textarea:focus-visible + .textarea-group-append {
+  border-color: blue !important;
+}
+.formio-component.formio-component-textarea textarea.form-control:disabled {
+  background-color: #cdcdcd;
+}

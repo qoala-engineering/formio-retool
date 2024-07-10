@@ -1,0 +1,656 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+html {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.form-io-wrapper {
+  padding: 0 4px;
+}
+
+.formio-component .form-control {
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px) !important;
+  padding: 0.375rem 0.75rem !important;
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  line-height: 1.5 !important;
+  color: #495057;
+  background-color: #fff !important;
+  background-clip: padding-box;
+  border: 1px solid #ced4da !important;
+  border-radius: 8px !important;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.formio-component .form-group {
+  margin-bottom: 1rem !important;
+}
+
+.formio-component .form-group .col-form-label {
+  padding-top: calc(0.375rem + 1px);
+  padding-bottom: calc(0.375rem + 1px);
+  margin-bottom: 0 !important;
+  font-size: inherit !important;
+  line-height: 1.5 !important;
+}
+
+.formio-component .formio-component-radio .form-radio {
+  margin-bottom: 8px !important;
+}
+
+.formio-component .formio-component-radio .form-radio .radio.form-check {
+  margin-bottom: 8px !important;
+}
+
+.formio-component .alert.alert-danger {
+  display: none;
+}
+
+.formio-component .form-section {
+  margin-top: 100px;
+  padding: 0 8px;
+}
+
+.formio-component .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.formio-component .row .col-4 {
+  width: 33.33%;
+}
+
+.formio-component .row .col-8 {
+  width: 66.66%;
+}
+
+.formio-component .input-group-prepend {
+  background-color: #1e3c57 !important;
+  border: 1px solid #1e3c57 !important;
+}
+
+.formio-component .input-group-prepend .input-group-text {
+  color: #fff !important;
+}
+
+.formio-component .form-check-label [type="radio"]:checked,
+.formio-component .form-check-label [type="radio"]:not(:checked) {
+  display: none;
+}
+
+.formio-component .form-check-label [type="radio"]:checked+span,
+.formio-component .form-check-label [type="radio"]:not(:checked)+span {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: #666;
+}
+
+.formio-component .form-check-label [type="radio"]:checked+span:before,
+.formio-component .form-check-label [type="radio"]:not(:checked)+span:before {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ddd;
+  border-radius: 100%;
+  background: #fff;
+}
+
+.formio-component .form-check-label [type="radio"]:checked+span:after,
+.formio-component .form-check-label [type="radio"]:not(:checked)+span:after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: #1e3c57;
+  position: absolute;
+  top: 4.5px;
+  left: 4.5px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.formio-component .form-check-label [type="radio"]:not(:checked)+span:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+.formio-component .form-check-label [type="radio"]:checked+span:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.formio-component .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.formio-component .info-box {
+  background-color: #fffef2;
+  border-radius: 4px;
+  margin-top: 10px;
+  padding: 6px;
+}
+
+.formio-component .info-box p {
+  display: flex;
+}
+
+.formio-component .info-box .flex-box {
+  display: flex;
+}
+
+.formio-component .info-box .icon-wrap .fa {
+  padding-top: 2px;
+  color: #ff6400;
+  font-size: 12px;
+}
+
+.formio-component .info-box .info-text {
+  font-size: 12px;
+  line-height: 16px;
+  color: #707070;
+  font-weight: 500;
+  padding: 0px 6px;
+  flex-grow: 1;
+  flex-basis: 1;
+}
+
+.formio-component-pleaseFillTravellerInformationBelow {
+  display: none;
+}
+
+.button-wrapper {
+  margin-top: 24px;
+}
+
+.button-wrapper button {
+  border: 0;
+  width: 100%;
+  padding: 12px;
+  outline: none;
+  border-radius: 12px;
+  background-color: #1e3c57;
+  cursor: pointer;
+  color: #fff;
+}
+
+.formio-component button.btn {
+  display: block;
+  font-size: 12px;
+  color: #fff;
+  height: 30px;
+  font-weight: normal;
+  text-transform: none;
+  letter-spacing: 0;
+  min-width: 64px;
+  padding: 0 16px;
+  user-select: none;
+  white-space: nowrap;
+  outline: 0;
+  position: relative;
+  text-decoration: none;
+  border: 1px solid #1e3c57;
+  background: linear-gradient(180deg, #1e3c57 0%, #1e3c57 100%), #1e3c57;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.formio-component.formio-component-button>button.btn.btn-primary {
+  border-color: unset !important;
+}
+
+.formio-component.formio-component-button>button.btn.btn-medium {
+  min-width: 200px;
+}
+
+.formio-component.formio-component-button.button-center>button.btn {
+  margin: 0 auto;
+}
+
+.formio-component.formio-component-button .null.has-error {
+  background-color: transparent !important;
+  color: #dc3545;
+  font-size: 12px;
+}
+
+.formio-select-autocomplete-input {
+  display: none;
+}
+
+.formio-dialog label {
+  font-family: "lato" !important;
+}
+
+.formio-dialog .form-group {
+  margin-bottom: 1rem !important;
+}
+
+.formio-dialog-content {
+  background: #fff !important;
+  padding: 24px !important;
+  width: 60% !important;
+  border-radius: 8px !important;
+  color: #4d4f5c !important;
+  overflow: visible;
+}
+
+.formio-dialog-close {
+  right: 12px !important;
+}
+
+.formio-dialog .btn {
+  background-color: #1e3c57;
+  border-color: #1e3c57;
+  font-family: "lato" !important;
+  font-size: 12px;
+  color: #fff;
+  height: 30px;
+  font-weight: bold;
+  text-transform: none;
+  box-shadow: none;
+  border-radius: 4px;
+  letter-spacing: 0;
+  min-width: 64px;
+  padding: 0 16px;
+  width: 100%;
+  margin-top: 24px;
+}
+
+.formio-dialog .btn-secondary {
+  color: #1e3c57 !important;
+  border: 1px solid #1e3c57 !important;
+  background-color: #fff;
+}
+
+.formio-dialog div[ref="confirmationDialog"] .btn-danger {
+  margin-left: 8px;
+}
+
+.formio-dialog .formio-component-textfield .input-group,
+.formio-dialog .formio-component-number .input-group,
+.formio-dialog .formio-component-currency .input-group {
+  display: flex;
+}
+
+.formio-dialog .formio-component-textfield .input-group:not(.has-validation)> :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating),
+.formio-dialog .formio-component-number .input-group:not(.has-validation)> :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating),
+.formio-dialog .formio-component-currency .input-group:not(.has-validation)> :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.formio-dialog .formio-component-textfield .input-group:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback),
+.formio-dialog .formio-component-number .input-group:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback),
+.formio-dialog .formio-component-currency .input-group:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  margin-left: -1px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.formio-dialog .formio-component-textfield .input-group-append,
+.formio-dialog .formio-component-number .input-group-append,
+.formio-dialog .formio-component-currency .input-group-append {
+  border: 1px solid #f0f1f2;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.formio-dialog .formio-component-textfield .input-group-append .input-group-text,
+.formio-dialog .formio-component-number .input-group-append .input-group-text,
+.formio-dialog .formio-component-currency .input-group-append .input-group-text {
+  display: flex;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 12px;
+  padding: 5px 15px;
+}
+
+.formio-dialog .formio-component-textfield .form-control,
+.formio-dialog .formio-component-number .form-control,
+.formio-dialog .formio-component-currency .form-control {
+  border: 1px solid #f0f1f2;
+  background-color: #f0f1f2;
+  border-radius: 8px;
+  padding: 6px 8px 6px 8px;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.formio-dialog .formio-component-textfield input.form-control:focus,
+.formio-dialog .formio-component-number input.form-control:focus,
+.formio-dialog .formio-component-currency input.form-control:focus {
+  border-color: #1e3c57 !important;
+}
+
+.formio-dialog .formio-component-textfield input.form-control:focus+.input-group-append,
+.formio-dialog .formio-component-number input.form-control:focus+.input-group-append,
+.formio-dialog .formio-component-currency input.form-control:focus+.input-group-append {
+  border-color: #1e3c57 !important;
+}
+
+.formio-dialog .formio-component-textfield input:focus-visible,
+.formio-dialog .formio-component-number input:focus-visible,
+.formio-dialog .formio-component-currency input:focus-visible {
+  outline: none;
+}
+
+.formio-dialog .formio-component-textfield label:focus-visible,
+.formio-dialog .formio-component-number label:focus-visible,
+.formio-dialog .formio-component-currency label:focus-visible {
+  outline: none;
+}
+
+.formio-dialog .formio-component-textarea .ck-editor {
+  border: 1px solid #f0f1f2;
+  background-color: #f0f1f2;
+  border-radius: 8px;
+  padding: 6px 8px 6px 8px;
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+  height: auto;
+}
+
+.formio-dialog .formio-component-textarea .ck-editor h1,
+.formio-dialog .formio-component-textarea .ck-editor h2,
+.formio-dialog .formio-component-textarea .ck-editor h3,
+.formio-dialog .formio-component-textarea .ck-editor h4,
+.formio-dialog .formio-component-textarea .ck-editor h5,
+.formio-dialog .formio-component-textarea .ck-editor h6 {
+  font-size: revert;
+  font-weight: revert;
+}
+
+.formio-dialog .formio-component-textarea .ck-editor menu,
+.formio-dialog .formio-component-textarea .ck-editor ol,
+.formio-dialog .formio-component-textarea .ck-editor ul {
+  list-style: revert;
+}
+
+.formio-dialog .formio-component-textarea .ck-editor ul,
+.formio-dialog .formio-component-textarea .ck-editor ol {
+  padding-left: 24px;
+}
+
+.formio-dialog .formio-component-textarea .ck-editor .ck-editor__top {
+  z-index: 1;
+}
+
+.formio-dialog .formio-component-textarea .ck-editor .ck-content {
+  border: none;
+  background-color: #f0f1f2;
+  font-size: 12px;
+}
+
+.formio-dialog .formio-component-textarea .ck-editor .ck-content.ck-focused {
+  box-shadow: none;
+  outline: none !important;
+  border: none;
+}
+
+.formio-dialog .formio-component-textarea .ck-editor .ck-toolbar {
+  border: none;
+  box-shadow: 0 2px 6px #d1d9e6;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.formio-dialog .formio-component-textarea .ck-editor .ck-dropdown .ck-dropdown__panel {
+  z-index: 10001;
+}
+
+.formio-dialog .formio-component-textarea .ck-editor:focus-within {
+  border-color: #1e3c57 !important;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+}
+
+.input-group>.form-control,
+.input-group>.form-control-plaintext,
+.input-group>.custom-select,
+.input-group>.custom-file {
+  position: relative;
+  flex: 1 1 auto;
+  width: 1%;
+  min-width: 0;
+  margin-bottom: 0;
+}
+
+.input-group>.form-control+.form-control,
+.input-group>.form-control-plaintext+.form-control,
+.input-group>.custom-select+.form-control,
+.input-group>.custom-file+.form-control,
+.input-group>.form-control+.custom-select,
+.input-group>.form-control-plaintext+.custom-select,
+.input-group>.custom-select+.custom-select,
+.input-group>.custom-file+.custom-select,
+.input-group>.form-control+.custom-file,
+.input-group>.form-control-plaintext+.custom-file,
+.input-group>.custom-select+.custom-file,
+.input-group>.custom-file+.custom-file {
+  margin-left: -2px;
+}
+
+.input-group>.form-control:focus,
+.input-group>.custom-select:focus,
+.input-group>.custom-file .custom-file-input:focus~.custom-file-label {
+  z-index: 3;
+}
+
+.input-group>.custom-file .custom-file-input:focus {
+  z-index: 4;
+}
+
+.input-group>.custom-file {
+  display: flex;
+  align-items: center;
+}
+
+.input-group-prepend,
+.input-group-append {
+  display: flex;
+}
+
+.input-group-prepend .btn,
+.input-group-append .btn {
+  position: relative;
+  z-index: 2;
+}
+
+.input-group-prepend .btn:focus,
+.input-group-append .btn:focus {
+  z-index: 3;
+}
+
+.input-group-prepend .btn+.btn,
+.input-group-append .btn+.btn,
+.input-group-prepend .btn+.input-group-text,
+.input-group-append .btn+.input-group-text,
+.input-group-prepend .input-group-text+.input-group-text,
+.input-group-append .input-group-text+.input-group-text,
+.input-group-prepend .input-group-text+.btn,
+.input-group-append .input-group-text+.btn {
+  margin-left: -2px;
+}
+
+.input-group-prepend {
+  margin-right: -2px;
+}
+
+.input-group-append {
+  margin-left: -2px;
+}
+
+.input-group-text {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  margin-bottom: 0;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.input-group-text input[type="radio"],
+.input-group-text input[type="checkbox"] {
+  margin-top: 0;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+.formio-component .dropbtn {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  font-size: 12px;
+  border: 1px solid #ddd;
+  border-right-style: none;
+  cursor: pointer;
+  border-radius: 8px 0 0 8px;
+}
+
+.formio-component .dropbtn:hover,
+.formio-component .dropbtn:focus {
+  background-color: whitesmoke;
+}
+
+.formio-component #filterDropdown {
+  width: 100%;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px;
+  border: none;
+  border-bottom: 1px solid white;
+}
+
+.formio-component #filterDropdown:focus {
+  outline: 1px solid #90d0f8;
+}
+
+.formio-component .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.formio-component .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 230px;
+  border: 1px solid #ddd;
+  z-index: 20;
+}
+
+.formio-component .dropdown-content .dropdown-content-wrapper {
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+.formio-component .dropdown-content .dropdown-content-wrapper .selected {
+  background-color: #ddd;
+}
+
+.formio-component .dropdown-content .list-dropdown {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+.formio-component .dropdown-content .list-dropdown:hover {
+  background-color: #f1f1f1;
+}
+
+.formio-component .show {
+  display: block;
+}
+
+.formio-multiple-mask-container .formio-multiple-mask-input {
+  border-radius: 0 8px 8px 0 !important;
+  outline: none !important;
+}
+
+.formio-component.formio-error-wrapper,
+.formio-component .formio-warning-wrapper {
+  padding: 0;
+  border-radius: 5px;
+}
+
+.formio-component .formio-errors .error {
+  background-color: transparent !important;
+  color: #dc3545;
+  font-size: 12px;
+}
+
+.formio-component .field-required:after {
+  position: relative;
+  z-index: 1;
+}
+
+.formio-component .field-required:after,
+.formio-component .tab-error::after {
+  content: "";
+  color: #eb0000;
+}
+
+.choices__list--dropdown,
+.choices__list[aria-expanded] {
+  z-index: 2;
+}
+
+.formio-component-dob .row  {
+  flex-wrap: nowrap;
+}
+
+.formio-component-dob .row .col {
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+
+.formio-component-dob .row .col:not(:last-child) {
+  margin-right: 8px;
+}

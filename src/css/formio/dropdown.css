@@ -1,0 +1,68 @@
+/* Dropdown Button */
+.formio-component {
+	/* Dropdown button on hover & focus */
+	/* The search field */
+	/* The search field when it gets focus/clicked on */
+	/* The container <div> - needed to position the dropdown content */
+	/* Dropdown Content (Hidden by Default) */
+	/* Links inside the dropdown */
+	/* Change color of dropdown links on hover */
+	/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+}
+ .formio-component .dropbtn {
+	 background-color: white;
+	 color: black;
+	 padding: 10px;
+	 font-size: 12px;
+	 border: 1px solid #ddd;
+	 border-right-style: none;
+	 cursor: pointer;
+}
+ .formio-component .dropbtn:hover, .formio-component .dropbtn:focus {
+	 background-color: whitesmoke;
+}
+ .formio-component #filterDropdown {
+	 width: 100%;
+	 box-sizing: border-box;
+	 background-repeat: no-repeat;
+	 font-size: 16px;
+	 padding: 14px 20px 12px;
+	 border: none;
+	 border-bottom: 1px solid white;
+}
+ .formio-component #filterDropdown:focus {
+	 outline: 1px solid #90d0f8;
+}
+ .formio-component .dropdown {
+	 position: relative;
+	 display: inline-block;
+}
+ .formio-component .dropdown-content {
+	 display: none;
+	 position: absolute;
+	 background-color: white;
+	 min-width: 230px;
+	 border: 1px solid #ddd;
+	 z-index: 20;
+}
+ .formio-component .dropdown-content .dropdown-content-wrapper {
+	 max-height: 300px;
+	 overflow-y: scroll;
+}
+ .formio-component .dropdown-content .dropdown-content-wrapper .selected {
+	 background-color: #ddd;
+}
+ .formio-component .dropdown-content .list-dropdown {
+	 color: black;
+	 padding: 12px 16px;
+	 text-decoration: none;
+	 display: block;
+	 cursor: pointer;
+}
+ .formio-component .dropdown-content .list-dropdown:hover {
+	 background-color: #f1f1f1;
+}
+ .formio-component .show {
+	 display: block;
+}
+ 
